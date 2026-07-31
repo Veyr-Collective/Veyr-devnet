@@ -453,6 +453,50 @@ p {
   font-size: 1rem;
 }
 
+.record-media {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+.record-media figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.record-media a {
+  display: block;
+  border: 1px solid rgba(248, 248, 255, 0.28);
+  background: rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+}
+
+.record-media a:hover,
+.record-media a:focus-visible {
+  border-color: var(--amber);
+}
+
+.record-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 180ms ease;
+}
+
+.record-media a:hover img,
+.record-media a:focus-visible img {
+  transform: scale(1.02);
+}
+
+.record-media figcaption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 dl {
   display: grid;
   gap: 10px;
