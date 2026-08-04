@@ -1,309 +1,42 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VEYR DEV_NET // Blacksite Index</title>
-    <meta
-      name="description"
-      content="VEYRINDEX is the public development archive for VEYR COLLECTIVE projects, field logs, prototypes, and release signals."
-    />
-    <link rel="stylesheet" href="assets/styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#151616">
+    <title>VEYR DEV_NET // Node Online</title>
+    <meta name="description" content="VEYR Collective public development network for armory, attachment, project, and release records.">
+    <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body>
+  <body data-root="" data-page="home">
     <div class="site-shell">
-      <aside class="node-panel" aria-label="VEYRINDEX navigation">
-        <div class="brand-block">
-          <p class="eyebrow">guest uplink</p>
-          <h1>VEYRINDEX</h1>
-          <p class="node-id">DEV_NET // PUBLIC BLACKSITE MIRROR</p>
-        </div>
-
-        <nav class="file-tree">
-          <a href="#veyrframe" data-section-link>veyrframe_index</a>
-          <a href="#field-logs" data-section-link>field_logs</a>
-          <a href="#veyrsystems" data-section-link>veyrsystems_notes</a>
-          <a href="#media" data-section-link>media_archive</a>
-          <a href="#releases" data-section-link>release_terminal</a>
-        </nav>
-
-        <div class="status-stack" aria-label="Network status">
-          <div>
-            <span>AUTH</span>
-            <strong>GUEST</strong>
-          </div>
-          <div>
-            <span>ARCHIVE</span>
-            <strong>ONLINE</strong>
-          </div>
-          <div>
-            <span>SYSTEMS</span>
-            <strong>QUARANTINED</strong>
-          </div>
-          <div>
-            <span>LOCAL TIME</span>
-            <strong id="clock">--:--:--</strong>
-          </div>
-        </div>
-      </aside>
-
+      <aside id="site-navigation" class="node-panel" aria-label="VEYRINDEX navigation"></aside>
       <main class="terminal-surface">
-        <section class="boot-panel" aria-labelledby="boot-title">
+<section class="boot-panel" aria-labelledby="boot-title">
           <div class="boot-copy">
-            <p class="eyebrow">veyr collective public mirror</p>
-            <h2 id="boot-title">BLACKSITE INDEX ACCESS</h2>
-            <p>
-              Public-facing records for VEYRFRAME weapons, VEYRSYSTEMS tooling,
-              and VEYRGLASS material research. This mirror only shows work that
-              is cleared for outside eyes. Active builds stay off-grid.
-            </p>
+            <p class="signal-line">NODE ONLINE</p>
+            <h2 id="boot-title" class="signal-title">VEYR<br>COLLECTIVE</h2>
+            <p>Public-facing access node for VEYR Armory records, the Veyr Attachment Index, development intelligence, release channels, and framework documentation. Cleared records only. Active builds remain off-grid until they survive validation.</p>
+            <div class="node-summary"><div><span>Status</span><strong>ONLINE</strong></div><div><span>Latest deployment</span><strong>PHASE_01</strong></div><div><span>Security clearance</span><strong>FIELD OPERATOR</strong></div><div><span>Public release</span><strong>NOT STAGED</strong></div></div>
+            <div class="action-row"><a class="action-link primary" href="armory/index.html">Enter armory</a><a class="action-link" href="attachments/index.html">Open attachment index</a></div>
           </div>
           <div class="boot-widgets">
-            <div class="terminal-card" aria-label="Connection log">
-              <div class="terminal-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-                <b>session.log</b>
-              </div>
-              <ol id="boot-log">
-                <li>&gt; connecting to VEYRINDEX...</li>
-                <li>&gt; guest authentication accepted</li>
-                <li>&gt; VEYRFRAME index mounted</li>
-                <li>&gt; field logs restored</li>
-                <li>&gt; private systems withheld</li>
-              </ol>
-            </div>
-
-            <aside class="weather-widget" aria-labelledby="weather-title">
-              <div class="weather-topline">
-                <span>NC-WX // LIVE</span>
-                <strong id="weather-time">--:--</strong>
-              </div>
-              <h3 id="weather-title">Night City Weather</h3>
-              <div class="weather-reading">
-                <strong id="weather-temp">--°C</strong>
-                <span id="weather-condition">signal pending</span>
-              </div>
-              <dl>
-                <div><dt>District</dt><dd id="weather-district">--</dd></div>
-                <div><dt>Wind</dt><dd id="weather-wind">--</dd></div>
-                <div><dt>Air quality</dt><dd id="weather-air">--</dd></div>
-                <div><dt>Advisory</dt><dd id="weather-advisory">--</dd></div>
-              </dl>
-            </aside>
-
-            <aside class="profile-card" aria-label="Public access profile">
-              <dl>
-                <div><dt>User</dt><dd>guest@VeyrCollective</dd></div>
-                <div><dt>Access</dt><dd>SECURED :: STATUS ACTIVE</dd></div>
-                <div><dt>Coordinates</dt><dd><span class="redaction w-45" aria-label="redacted"></span></dd></div>
-                <div><dt>Threat index</dt><dd><span class="threat-low">LOW</span></dd></div>
-              </dl>
-              <img src="assets/media/veyr-github-qr.png" alt="Veyr Collective GitHub QR code" />
-            </aside>
+            <div class="terminal-card"><div class="terminal-bar"><span></span><span></span><span></span><b>session.log</b></div><ol id="boot-log"><li>&gt; connecting to VEYRINDEX...</li><li>&gt; field operator profile accepted</li><li>&gt; VEYR ARMORY mounted</li><li>&gt; attachment records restored</li><li>&gt; private systems withheld</li></ol></div>
+            <aside class="weather-widget"><div class="weather-topline"><span>NC-WX // LIVE</span><strong id="weather-time">--:--</strong></div><h3>Night City Weather</h3><div class="weather-reading"><strong id="weather-temp">--°C</strong><span id="weather-condition">signal pending</span></div><dl><div><dt>District</dt><dd id="weather-district">--</dd></div><div><dt>Wind</dt><dd id="weather-wind">--</dd></div><div><dt>Air quality</dt><dd id="weather-air">--</dd></div><div><dt>Advisory</dt><dd id="weather-advisory">--</dd></div></dl></aside>
+            <aside class="profile-card"><dl><div><dt>User</dt><dd>field_operator@VeyrCollective</dd></div><div><dt>Access</dt><dd>SECURED :: ACTIVE</dd></div><div><dt>Coordinates</dt><dd><span class="redaction w-45" aria-label="redacted"></span></dd></div><div><dt>Threat index</dt><dd>LOW</dd></div></dl><img src="assets/media/veyr-github-qr.png" alt="Veyr Collective GitHub QR code"></aside>
           </div>
         </section>
-
-        <section id="veyrframe" class="content-section" aria-labelledby="veyrframe-title">
-          <div class="section-heading">
-            <p class="eyebrow">/veyrframe_index</p>
-            <h2 id="veyrframe-title">VEYRFRAME Records</h2>
-          </div>
-
-          <div class="record-grid">
-            <article class="record-card redacted-card">
-              <div class="record-header">
-                <span>VEYRFRAME_RECORD</span>
-                <strong>XCR-L</strong>
-              </div>
-              <figure class="record-media">
-                <a href="assets/media/veyrframes/xcr-l.jpg">
-                  <img
-                    src="assets/media/veyrframes/xcr-l.jpg"
-                    alt="XCR-L rifle shown in the Cyberpunk 2077 inventory preview"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </a>
-                <figcaption>Platform capture</figcaption>
-              </figure>
-              <dl>
-                <div><dt>Status</dt><dd>Development</dd></div>
-                <div><dt>Platform</dt><dd>Modular XCR-L rifle platform</dd></div>
-                <div><dt>Animation donor</dt><dd>Militech Ajax -> prototype assault rifle animations</dd></div>
-                <div><dt>Pipeline</dt><dd>Preview controller research / attachment validation</dd></div>
-              </dl>
-            </article>
-
-            <article class="record-card redacted-card">
-              <div class="record-header">
-                <span>VEYRFRAME_RECORD</span>
-                <strong>M4</strong>
-              </div>
-              <figure class="record-media">
-                <a href="assets/media/veyrframes/m4-in-game-preview.png">
-                  <img
-                    src="assets/media/veyrframes/m4-in-game-preview.png"
-                    alt="M4 shown in the Cyberpunk 2077 inventory preview"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </a>
-                <figcaption>Platform capture</figcaption>
-              </figure>
-              <dl>
-                <div><dt>Status</dt><dd>Preview captured</dd></div>
-                <div><dt>Platform</dt><dd>M4</dd></div>
-                <div><dt>Variants</dt><dd><span class="redaction w-78" aria-label="redacted"></span></dd></div>
-                <div><dt>Remaining</dt><dd><span class="redaction w-78" aria-label="redacted"></span></dd></div>
-              </dl>
-            </article>
-
-            <article class="record-card redacted-card">
-              <div class="record-header">
-                <span>VEYRFRAME_RECORD</span>
-                <strong>COLT 1911</strong>
-              </div>
-              <figure class="record-media">
-                <a href="assets/media/veyrframes/colt-1911.jpg">
-                  <img
-                    src="assets/media/veyrframes/colt-1911.jpg"
-                    alt="Colt 1911 shown in the Cyberpunk 2077 inventory preview"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </a>
-                <figcaption>Platform capture</figcaption>
-              </figure>
-              <dl>
-                <div><dt>Status</dt><dd>Early development</dd></div>
-                <div><dt>Platform</dt><dd>Colt 1911</dd></div>
-                <div><dt>Notes</dt><dd>Initial implementation underway</dd></div>
-                <div><dt>Release</dt><dd><span class="redaction w-50" aria-label="redacted"></span></dd></div>
-              </dl>
-            </article>
-          </div>
-        </section>
-
-        <section id="field-logs" class="content-section" aria-labelledby="logs-title">
-          <div class="section-heading">
-            <p class="eyebrow">/field_logs</p>
-            <h2 id="logs-title">Recovered Logs</h2>
-          </div>
-
-          <div class="log-list">
-            <article>
-              <time datetime="2026-07-01">2026.07.01</time>
-              <h3>SIMD Reload Pipeline Stabilized</h3>
-              <p>
-                Targeted import path confirmed. One clip updates, the original
-                bank stays intact, and the animation list does not duplicate
-                itself on export.
-              </p>
-            </article>
-            <article>
-              <time datetime="2026-06-28">2026.06.28</time>
-              <h3>Tactical Stance Calibration</h3>
-              <p>
-                Canted aim offsets moved into live tuning. Animation carries the
-                stance; calibration carries the sight line.
-              </p>
-            </article>
-            <article>
-              <time datetime="2026-06-27">2026.06.27</time>
-              <h3>Attachment Modularity Pass</h3>
-              <p>
-                Rails, optics, and scope bones are being split into modular
-                targets so custom hardware can be validated without rewriting
-                the whole weapon.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section id="veyrsystems" class="content-section split-section" aria-labelledby="veyrsystems-title">
-          <div class="section-heading">
-            <p class="eyebrow">/veyrsystems_notes</p>
-            <h2 id="veyrsystems-title">VEYRSYSTEMS State</h2>
-          </div>
-
-          <div class="framework-layout">
-            <div class="terminal-card compact">
-              <div class="terminal-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-                <b>veyrsystems.status</b>
-              </div>
-              <pre><code>VEYRFRAME_CORE    sealed
-TAC_STANCE        prototype stable
-VEYRGLASS_COAT    research
-ANIM_REGISTRY     planned
-PUBLIC_RELEASE    blocked until stable</code></pre>
-            </div>
-            <div class="note-panel">
-              <h3>Operating Rule</h3>
-              <p>
-                Nothing ships because it looks good in a screenshot. Public
-                packages wait until the weapon opens, previews, attaches, and
-                survives a real test pass.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="media" class="content-section" aria-labelledby="media-title">
-          <div class="section-heading">
-            <p class="eyebrow">/media_archive</p>
-            <h2 id="media-title">Monitor Feeds</h2>
-          </div>
-
-          <div class="media-grid">
-            <figure class="redacted-feed" aria-label="Redacted monitor feed">
-              <div><span>NO SIGNAL</span></div>
-              <figcaption>FEED 01 // redacted capture</figcaption>
-            </figure>
-            <figure class="redacted-feed" aria-label="Redacted monitor feed">
-              <div><span>NO SIGNAL</span></div>
-              <figcaption>FEED 02 // redacted capture</figcaption>
-            </figure>
-            <figure class="redacted-feed" aria-label="Redacted monitor feed">
-              <div><span>NO SIGNAL</span></div>
-              <figcaption>FEED 03 // diagnostic capture sealed</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section id="releases" class="content-section" aria-labelledby="release-title">
-          <div class="section-heading">
-            <p class="eyebrow">/release_terminal</p>
-            <h2 id="release-title">Release Terminal</h2>
-          </div>
-
-          <div class="release-panel">
-            <div>
-              <h3>Public Package Policy</h3>
-              <p>
-                Stable packages get mirrored here. Internal scripts, extracted
-                assets, and unfinished prototypes stay private until they have a
-                reason to be public.
-              </p>
-            </div>
-            <form class="command-line" id="command-form">
-              <label for="command-input">operator command</label>
-              <div>
-                <span>&gt;</span>
-                <input id="command-input" autocomplete="off" value="scan releases" />
-                <button type="submit">RUN</button>
-              </div>
-              <output id="command-output">No public packages staged.</output>
-            </form>
-          </div>
-        </section>
+        <section class="content-section"><div class="section-heading"><div><p class="eyebrow">/latest_deployment</p><h2>Deployment Signal</h2></div><p>The network is online. Public weapon packages remain locked behind validation.</p></div><div class="dashboard-grid"><article class="release-card"><p class="eyebrow">stable release</p><h3>No package staged</h3><p>Stable files will route here after final integration, documentation, and installation checks.</p></article><article class="metric-card panel-card"><p class="eyebrow">armory records</p><strong data-stat="weapons">--</strong><p>Public platform dossiers online.</p></article><article class="metric-card panel-card"><p class="eyebrow">attachment records</p><strong data-stat="attachments">--</strong><p>Searchable compatibility entries online.</p></article></div></section>
+        <section class="content-section"><div class="section-heading"><div><p class="eyebrow">/featured_platform</p><h2>Featured Weapon</h2></div><p>The flagship platform currently carrying the shared framework.</p></div><div data-featured-weapon="xcr-l"></div></section>
+        <section class="content-section"><div class="section-heading"><div><p class="eyebrow">/project_status</p><h2>Development Pulse</h2></div><p>Public progress indicators describe current effort, not release promises.</p></div><div class="project-board" data-project-board></div></section>
+        <section class="content-section"><div class="section-heading"><div><p class="eyebrow">/latest_intel</p><h2>Recovered Logs</h2></div><p>Recent public development signals.</p></div><div class="log-grid" data-intel-list data-limit="3"></div></section>
+        <section class="content-section"><div class="section-heading"><div><p class="eyebrow">/quick_access</p><h2>Network Routes</h2></div><p>Direct paths into the active public mirror.</p></div><div class="quick-grid"><a href="armory/index.html"><strong>VEYR ARMORY</strong><span>Weapon platforms, specifications, features, and current development state.</span></a><a href="attachments/index.html"><strong>ATTACHMENT INDEX</strong><span>Filter attachments by platform, caliber, and device class.</span></a><a href="documentation/index.html"><strong>DOCUMENTATION</strong><span>Framework architecture, naming conventions, installation, and developer notes.</span></a><a href="projects/index.html"><strong>PROJECTS</strong><span>Active, experimental, planned, and archived workstreams.</span></a><a href="intel/index.html"><strong>INTEL</strong><span>Development logs, technical articles, and behind-the-scenes records.</span></a><a href="downloads/index.html"><strong>DOWNLOADS</strong><span>Stable, experimental, legacy, and optional packages when cleared.</span></a></div></section>
+        <section class="content-section"><div class="section-heading"><div><p class="eyebrow">/blacksite_console</p><h2>Network Console</h2></div><p>Cosmetic command access, because ordinary navigation was apparently too emotionally stable.</p></div><div class="console-panel"><form class="command-line" data-command-form><label for="home-command">operator command</label><div><span>&gt;</span><input id="home-command" autocomplete="off" value="status"><button type="submit">RUN</button></div><output>Type HELP for available commands.</output></form></div></section>
+        <footer class="site-footer"><span>VEYR COLLECTIVE // PUBLIC DEV_NET MIRROR</span><span>UNAUTHORIZED SYSTEMS REMAIN OFF-GRID</span></footer>
       </main>
     </div>
-
+    <script src="assets/navigation.js"></script>
+    <script src="assets/data.js"></script>
     <script src="assets/site.js"></script>
   </body>
 </html>

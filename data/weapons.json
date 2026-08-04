@@ -1,0 +1,174 @@
+{
+  "updated": "2026-08-04",
+  "items": [
+    {
+      "slug": "xcr-l",
+      "name": "XCR-L",
+      "record": "VEYRFRAME-01",
+      "status": "Core platform complete",
+      "statusTone": "complete",
+      "class": "Modular assault rifle",
+      "currentPhase": "Release validation and packaging",
+      "release": "Public package pending validation",
+      "progress": 100,
+      "featured": true,
+      "path": "armory/xcr-l.html",
+      "image": "assets/media/veyrframes/xcr-l.jpg",
+      "imageAlt": "XCR-L rifle shown in the Cyberpunk 2077 inventory preview",
+      "captureLabel": "Flagship platform capture",
+      "overview": "The XCR-L is the flagship VEYRFRAME platform: a grounded modular rifle built around reusable attachment interfaces, calibrated aiming states, and a weapon-agnostic framework rather than a single sealed implementation.",
+      "specifications": [
+        {
+          "label": "Framework",
+          "value": "Veyr Modular Weapon Framework"
+        },
+        {
+          "label": "Feed system",
+          "value": "Modular magazine architecture"
+        },
+        {
+          "label": "Aiming",
+          "value": "Standard ADS, canted ADS, tactical stance"
+        },
+        {
+          "label": "Attachment routing",
+          "value": "Optic, muzzle, grip, stock, laser, light"
+        },
+        {
+          "label": "Release state",
+          "value": "Validation hold"
+        }
+      ],
+      "features": [
+        "Shared attachment registry and platform routing",
+        "Live weapon-position calibration",
+        "Canted aiming and tactical-stance support",
+        "Magazine variants driven through a shared item architecture",
+        "Prepared interfaces for PIP optics and magnifiers"
+      ],
+      "attachmentSupport": [
+        "Optics and magnifiers",
+        "Suppressors, flash hiders, brakes, and hybrid devices",
+        "Lasers and weapon lights",
+        "Grips, stocks, adapters, and magazine variants"
+      ],
+      "knownIssues": [
+        "Public package remains withheld until final validation passes",
+        "Some advanced optic and magnifier combinations still require individual alignment",
+        "Release documentation and installer package are not yet staged"
+      ]
+    },
+    {
+      "slug": "m4",
+      "name": "M4",
+      "record": "VEYRFRAME-02",
+      "status": "Active development",
+      "statusTone": "development",
+      "class": "Modular carbine",
+      "currentPhase": "Animation implementation and platform integration",
+      "release": "Not staged",
+      "progress": 80,
+      "featured": false,
+      "path": "armory/m4.html",
+      "image": "assets/media/veyrframes/m4-in-game-preview.png",
+      "imageAlt": "M4 shown in the Cyberpunk 2077 inventory preview",
+      "captureLabel": "Development platform capture",
+      "overview": "The M4 is the current secondary rifle platform being folded into VEYRFRAME. Its public record remains intentionally narrow while animation work, attachment routing, and final weapon behavior are brought under the shared framework.",
+      "specifications": [
+        {
+          "label": "Framework",
+          "value": "VEYRFRAME integration in progress"
+        },
+        {
+          "label": "Platform role",
+          "value": "Modular carbine"
+        },
+        {
+          "label": "Current focus",
+          "value": "Animation implementation"
+        },
+        {
+          "label": "Attachment routing",
+          "value": "Planned across primary rifle classes"
+        },
+        {
+          "label": "Release state",
+          "value": "Internal development"
+        }
+      ],
+      "features": [
+        "Shared rifle attachment strategy",
+        "Modular optic and muzzle routing",
+        "Prepared stock, grip, light, and laser interfaces",
+        "Designed to reuse VEYRFRAME systems instead of duplicating them"
+      ],
+      "attachmentSupport": [
+        "Rifle optics and magnifiers",
+        "Muzzle devices and suppressors",
+        "Lasers, lights, grips, and stocks",
+        "Compatibility entries marked planned until validated in game"
+      ],
+      "knownIssues": [
+        "Animation implementation remains the primary workload",
+        "Compatibility entries are provisional until final platform validation",
+        "No public build or release date is staged"
+      ]
+    },
+    {
+      "slug": "kimber",
+      "name": "Kimber",
+      "record": "VEYRFRAME-03",
+      "status": "Early development",
+      "statusTone": "development",
+      "class": "1911-pattern sidearm",
+      "currentPhase": "Initial implementation",
+      "release": "Not staged",
+      "progress": 40,
+      "featured": false,
+      "path": "armory/kimber.html",
+      "image": "assets/media/veyrframes/colt-1911.jpg",
+      "imageAlt": "Kimber 1911-pattern sidearm shown in the Cyberpunk 2077 inventory preview",
+      "captureLabel": "Sidearm platform capture",
+      "overview": "The Kimber is VEYR's dedicated sidearm project. The public record covers the intended platform role and modular direction while implementation details remain limited until the base weapon is stable.",
+      "specifications": [
+        {
+          "label": "Framework",
+          "value": "VEYRFRAME sidearm branch"
+        },
+        {
+          "label": "Platform role",
+          "value": "1911-pattern sidearm"
+        },
+        {
+          "label": "Current focus",
+          "value": "Base implementation"
+        },
+        {
+          "label": "Accessory strategy",
+          "value": "Pistol-specific light and muzzle classes"
+        },
+        {
+          "label": "Release state",
+          "value": "Internal development"
+        }
+      ],
+      "features": [
+        "Dedicated sidearm implementation",
+        "Prepared support for pistol lights and muzzle devices",
+        "Shared naming and compatibility records with the wider armory",
+        "Grounded handling and presentation targets"
+      ],
+      "attachmentSupport": [
+        "Pistol lights",
+        "Pistol muzzle devices where the platform supports them",
+        "Sidearm-specific compatibility records",
+        "Additional interfaces pending implementation"
+      ],
+      "knownIssues": [
+        "Initial implementation is still underway",
+        "Final attachment interface has not been publicly validated",
+        "No release package or schedule is staged"
+      ]
+    }
+  ]
+}

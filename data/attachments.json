@@ -1,0 +1,289 @@
+{
+  "updated": "2026-08-04",
+  "platforms": [
+    "xcr-l",
+    "m4",
+    "kimber"
+  ],
+  "items": [
+    {
+      "slug": "aimpoint-t2",
+      "name": "Aimpoint T2",
+      "type": "Optics",
+      "mount": "Picatinny",
+      "calibers": [
+        "Universal"
+      ],
+      "summary": "Compact rifle optic record prepared for platform-level alignment and sight-height validation.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Fast target acquisition",
+        "Low visual obstruction"
+      ],
+      "tradeoffs": [
+        "Requires platform alignment",
+        "No magnification"
+      ]
+    },
+    {
+      "slug": "eotech-exps3",
+      "name": "EOTech EXPS3",
+      "type": "Optics",
+      "mount": "Picatinny",
+      "calibers": [
+        "Universal"
+      ],
+      "summary": "Holographic optic record for primary rifle platforms and magnifier pairings.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Clear close-range sight picture",
+        "Magnifier pairing"
+      ],
+      "tradeoffs": [
+        "Higher profile",
+        "Alignment pass required"
+      ]
+    },
+    {
+      "slug": "g33-magnifier",
+      "name": "G33 Magnifier",
+      "type": "Magnifiers",
+      "mount": "Flip mount",
+      "calibers": [
+        "Universal"
+      ],
+      "summary": "Flip-to-side magnifier record. Combination-specific alignment remains part of validation.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Extended target identification",
+        "Pairs with holographic optics"
+      ],
+      "tradeoffs": [
+        "Added weight",
+        "Combination-specific offsets"
+      ]
+    },
+    {
+      "slug": "aac-762-sdn6",
+      "name": "AAC 7.62 SDN-6",
+      "type": "Suppressors",
+      "mount": "QD muzzle",
+      "calibers": [
+        "5.56",
+        "7.62"
+      ],
+      "summary": "Multi-platform rifle suppressor record using broad gameplay compatibility across supported rifle classes.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Noise reduction",
+        "Reduced muzzle signature",
+        "Recoil control"
+      ],
+      "tradeoffs": [
+        "Handling penalty",
+        "Increased weapon length"
+      ]
+    },
+    {
+      "slug": "xm177-flash-hider",
+      "name": "XM177 Flash Hider",
+      "type": "Flash Hiders",
+      "mount": "Threaded muzzle",
+      "calibers": [
+        "5.56"
+      ],
+      "summary": "Legacy-pattern rifle flash hider routed through the shared muzzle-device index.",
+      "compatibility": {
+        "xcr-l": "planned",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Reduced muzzle flash",
+        "Distinct legacy profile"
+      ],
+      "tradeoffs": [
+        "No suppression",
+        "Platform fit validation required"
+      ]
+    },
+    {
+      "slug": "rifle-muzzle-brake-1",
+      "name": "Rifle Muzzle Brake 1",
+      "type": "Muzzle Brakes",
+      "mount": "Threaded muzzle",
+      "calibers": [
+        "5.56",
+        "7.62"
+      ],
+      "summary": "Shared brake record intended for recoil-oriented rifle configurations.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Recoil reduction",
+        "Faster follow-up shots"
+      ],
+      "tradeoffs": [
+        "Increased report",
+        "Visible muzzle blast"
+      ]
+    },
+    {
+      "slug": "efab-762",
+      "name": "Precision Armament EFAB 762",
+      "type": "Hybrid Devices",
+      "mount": "Threaded muzzle",
+      "calibers": [
+        "7.62"
+      ],
+      "summary": "Hybrid muzzle-device record balancing flash mitigation and recoil control.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Flash mitigation",
+        "Recoil control"
+      ],
+      "tradeoffs": [
+        "Handling cost",
+        "Caliber-specific routing"
+      ]
+    },
+    {
+      "slug": "an-peq-15",
+      "name": "AN/PEQ-15",
+      "type": "Lasers",
+      "mount": "Picatinny",
+      "calibers": [
+        "Universal"
+      ],
+      "summary": "Laser-module record supporting top and side mounting positions through the shared raycast system.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Visible aiming reference",
+        "Multiple mounting positions"
+      ],
+      "tradeoffs": [
+        "Rail space",
+        "Per-platform calibration"
+      ]
+    },
+    {
+      "slug": "wmx200",
+      "name": "WMX200",
+      "type": "Lights",
+      "mount": "Picatinny",
+      "calibers": [
+        "Universal"
+      ],
+      "summary": "Rifle-light record with left and right mounting variants.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Target illumination",
+        "Side-mount variants"
+      ],
+      "tradeoffs": [
+        "Rail space",
+        "Visible signature"
+      ]
+    },
+    {
+      "slug": "x400",
+      "name": "X400",
+      "type": "Lights",
+      "mount": "Pistol rail",
+      "calibers": [
+        "Universal"
+      ],
+      "summary": "Pistol light and laser record reserved for sidearm validation.",
+      "compatibility": {
+        "xcr-l": "incompatible",
+        "m4": "incompatible",
+        "kimber": "planned"
+      },
+      "effects": [
+        "Compact illumination",
+        "Integrated aiming reference"
+      ],
+      "tradeoffs": [
+        "Pistol-rail requirement",
+        "Sidearm-specific alignment"
+      ]
+    },
+    {
+      "slug": "vertical-foregrip",
+      "name": "Vertical Foregrip",
+      "type": "Grips",
+      "mount": "Lower rail",
+      "calibers": [
+        "Universal"
+      ],
+      "summary": "General rifle-grip record for handling and recoil-oriented configurations.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Recoil control",
+        "Stable handling"
+      ],
+      "tradeoffs": [
+        "Added bulk",
+        "Lower-rail requirement"
+      ]
+    },
+    {
+      "slug": "a3-tactical-stock",
+      "name": "A3 Tactical Stock",
+      "type": "Stocks",
+      "mount": "Stock interface",
+      "calibers": [
+        "Universal"
+      ],
+      "summary": "Compact stock record used in modular rifle configurations and adapter testing.",
+      "compatibility": {
+        "xcr-l": "verified",
+        "m4": "planned",
+        "kimber": "incompatible"
+      },
+      "effects": [
+        "Compact profile",
+        "Configurable rifle silhouette"
+      ],
+      "tradeoffs": [
+        "Adapter dependency",
+        "Platform-specific fit"
+      ]
+    }
+  ]
+}
