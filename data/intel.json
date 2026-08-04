@@ -1,0 +1,40 @@
+{
+  "updated": "2026-08-04",
+  "items": [
+    {
+      "date": "2026-08-04",
+      "displayDate": "2026.08.04",
+      "title": "DEV_NET Phase One Routed",
+      "category": "Network",
+      "summary": "The public mirror is expanding from a single index into a multipage armory, attachment database, project board, documentation gateway, and console-driven network."
+    },
+    {
+      "date": "2026-08-03",
+      "displayDate": "2026.08.03",
+      "title": "M4 Platform Capture Added",
+      "category": "Armory",
+      "summary": "The M4 development capture replaced the retired secondary rifle record. Animation and integration work remain active."
+    },
+    {
+      "date": "2026-07-01",
+      "displayDate": "2026.07.01",
+      "title": "SIMD Reload Pipeline Stabilized",
+      "category": "Technical",
+      "summary": "Targeted import path confirmed. One clip updates, the original bank stays intact, and the animation list does not duplicate itself on export."
+    },
+    {
+      "date": "2026-06-28",
+      "displayDate": "2026.06.28",
+      "title": "Tactical Stance Calibration",
+      "category": "Systems",
+      "summary": "Canted aim offsets moved into live tuning. Animation carries the stance; calibration carries the sight line."
+    },
+    {
+      "date": "2026-06-27",
+      "displayDate": "2026.06.27",
+      "title": "Attachment Modularity Pass",
+      "category": "Framework",
+      "summary": "Rails, optics, and scope bones are being split into modular targets so custom hardware can be validated without rewriting the whole weapon."
+    }
+  ]
+}

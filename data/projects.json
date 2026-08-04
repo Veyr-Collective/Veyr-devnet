@@ -1,0 +1,50 @@
+{
+  "updated": "2026-08-04",
+  "items": [
+    {
+      "slug": "xcr-l",
+      "name": "XCR-L",
+      "group": "Armory",
+      "status": "Active",
+      "progress": 100,
+      "phase": "Release validation",
+      "visibility": "PUBLIC RECORD"
+    },
+    {
+      "slug": "m4",
+      "name": "M4",
+      "group": "Armory",
+      "status": "Active",
+      "progress": 80,
+      "phase": "Animation implementation",
+      "visibility": "PUBLIC RECORD"
+    },
+    {
+      "slug": "kimber",
+      "name": "Kimber",
+      "group": "Armory",
+      "status": "Active",
+      "progress": 40,
+      "phase": "Initial integration",
+      "visibility": "PUBLIC RECORD"
+    },
+    {
+      "slug": "systems-denial",
+      "name": "Systems Denial",
+      "group": "Equipment",
+      "status": "Experimental",
+      "progress": 25,
+      "phase": "Effect architecture",
+      "visibility": "LIMITED RECORD"
+    },
+    {
+      "slug": "spider-drone",
+      "name": "Spider Drone",
+      "group": "Equipment",
+      "status": "Planned",
+      "progress": 5,
+      "phase": "Research",
+      "visibility": "REDACTED DETAILS"
+    }
+  ]
+}

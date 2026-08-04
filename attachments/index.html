@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#151616">
+    <title>Attachment Index // VEYR DEV_NET</title>
+    <meta name="description" content="Filter VEYR attachment records by platform, caliber, and attachment type.">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body data-root="../" data-page="attachments">
+    <div class="site-shell">
+      <aside id="site-navigation" class="node-panel" aria-label="VEYRINDEX navigation"></aside>
+      <main class="terminal-surface">
+<header class="page-masthead"><p class="eyebrow">/veyr_attachment_index</p><h2>Attachment Database</h2><p>Search public attachment records by weapon platform, caliber, and device class. Compatibility states distinguish validated combinations from planned support and hard incompatibility.</p><div class="page-meta"><span class="status-chip online">DATABASE ONLINE</span><span class="meta-chip"><span data-stat="attachments">--</span>&nbsp;PUBLIC RECORDS</span><a class="meta-chip" href="compatibility.html">OPEN MATRIX</a></div></header>
+        <section class="content-section"><div class="section-heading"><div><p class="eyebrow">/filters</p><h2>Query Records</h2></div><p>Platform filters include verified and planned combinations.</p></div><div class="filter-panel"><div class="filter-field"><label for="attachment-platform">Platform</label><select id="attachment-platform"><option value="all">All platforms</option><option value="xcr-l">XCR-L</option><option value="m4">M4</option><option value="kimber">Kimber</option></select></div><div class="filter-field"><label for="attachment-caliber">Caliber</label><select id="attachment-caliber"><option value="all">All calibers</option></select></div><div class="filter-field"><label for="attachment-type">Attachment type</label><select id="attachment-type"><option value="all">All types</option></select></div><button id="attachment-reset" class="terminal-button" type="button">RESET</button></div><div class="attachment-results" data-attachment-results><div class="empty-state">MOUNTING ATTACHMENT RECORDS...</div></div></section>
+        <section class="content-section"><div class="section-heading"><div><p class="eyebrow">/compatibility_states</p><h2>Record Legend</h2></div><p>Implementation status, not real-world certification.</p></div><div class="dashboard-grid"><article class="panel-card"><span class="status-chip verified">VERIFIED</span><h3>Validated In Game</h3><p>The combination has been mounted and checked on the named platform.</p></article><article class="panel-card"><span class="status-chip planned">PLANNED</span><h3>Supported Direction</h3><p>The combination is intended but still requires implementation or validation.</p></article><article class="panel-card"><span class="status-chip incompatible">INCOMPATIBLE</span><h3>Not Routed</h3><p>The attachment does not belong to that platform class in the current framework.</p></article></div></section>
+        <footer class="site-footer"><span>VEYR COLLECTIVE // PUBLIC DEV_NET MIRROR</span><span>UNAUTHORIZED SYSTEMS REMAIN OFF-GRID</span></footer>
+      </main>
+    </div>
+    <script src="../assets/navigation.js"></script>
+    <script src="../assets/data.js"></script>
+    <script src="../assets/site.js"></script>
+  </body>
+</html>
