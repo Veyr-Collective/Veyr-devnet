@@ -179,7 +179,7 @@ function runCommand(command) {
     normalized.includes("veyrframe") ||
     normalized.includes("weapon")
   ) {
-    return "VEYRFRAME index online: XCR-L, AUG A3 CQC, Colt 1911 records available.";
+    return "VEYRFRAME index online: XCR-L, M4, Colt 1911 records available.";
   }
 
   if (normalized.includes("simd")) {
