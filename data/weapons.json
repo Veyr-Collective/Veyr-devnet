@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04",
+  "updated": "2026-08-10",
   "items": [
     {
       "slug": "xcr-l",
@@ -70,9 +70,10 @@
       "progress": 80,
       "featured": false,
       "path": "armory/m4.html",
-      "image": "assets/media/veyrframes/m4-in-game-preview.png",
-      "imageAlt": "M4 shown in the Cyberpunk 2077 inventory preview",
-      "captureLabel": "Development platform capture",
+      "previewPath": "armory/m4-preview.html",
+      "image": "assets/media/veyrframes/m4-wireframe-centered.png",
+      "imageAlt": "Centered wireframe viewport render of the VEYR M4 modular carbine",
+      "captureLabel": "Centered M4 wireframe study",
       "overview": "The M4 is the current secondary rifle platform being folded into VEYRFRAME. Its public record remains intentionally narrow while animation work, attachment routing, and final weapon behavior are brought under the shared framework.",
       "specifications": [
         {

@@ -176,6 +176,11 @@ dd { min-width:0; margin:0; color:var(--text); font-size:.82rem; overflow-wrap:a
 
 .weapon-hero { display:grid; grid-template-columns:minmax(300px,1fr) minmax(0,1fr); gap:22px; padding:18px; }
 .weapon-hero figure { margin:0; }
+.weapon-preview-link { display:block; overflow:hidden; border:1px solid rgba(214,211,204,.25); background:rgba(0,0,0,.28); }
+.weapon-preview-link:hover, .weapon-preview-link:focus-visible { border-color:var(--amber); outline:none; }
+.full-preview { margin:0; padding:clamp(10px,2vw,20px); border:1px solid rgba(214,211,204,.5); background:rgba(0,0,0,.48); }
+.full-preview img { display:block; width:100%; height:auto; object-fit:contain; }
+.full-preview figcaption { padding-top:12px; color:var(--muted); font-size:.7rem; text-transform:uppercase; }
 .weapon-copy { display:flex; flex-direction:column; }
 .weapon-copy .action-row { margin-top:auto; padding-top:18px; }
 .detail-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:16px; }

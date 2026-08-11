@@ -10,7 +10,7 @@
 
   const weaponCard = (w) => `<article class="record-card">
     <div class="record-header"><span>${w.record}</span><strong>${w.name}</strong></div>
-    <figure class="record-media"><a href="${root}${w.image}"><img src="${root}${w.image}" alt="${w.imageAlt}" loading="lazy" decoding="async"></a><figcaption>${w.captureLabel}</figcaption></figure>
+    <figure class="record-media"><a href="${root}${w.previewPath || w.image}"><img src="${root}${w.image}" alt="${w.imageAlt}" loading="lazy" decoding="async"></a><figcaption>${w.captureLabel}</figcaption></figure>
     <dl><div><dt>Status</dt><dd>${w.status}</dd></div><div><dt>Class</dt><dd>${w.class}</dd></div><div><dt>Current phase</dt><dd>${w.currentPhase}</dd></div></dl>
     <div class="card-footer"><span class="status-chip ${tone(w.statusTone)}">${w.statusTone}</span><a class="card-link" href="${root}${w.path}">Open record →</a></div></article>`;
 
@@ -30,7 +30,8 @@
     try { const data = await load("weapons"); const w = data.items.find((x)=>x.slug===mount.dataset.weaponDetail); if (!w) throw new Error("weapon record not found");
       const specs = w.specifications.map((x)=>`<div><dt>${x.label}</dt><dd>${x.value}</dd></div>`).join("");
       const list = (items) => items.map((x)=>`<li>${x}</li>`).join("");
-      mount.innerHTML = `<div class="weapon-hero"><figure><img src="${root}${w.image}" alt="${w.imageAlt}"></figure><div class="weapon-copy"><p class="eyebrow">${w.record}</p><h2>${w.name}</h2><p>${w.overview}</p><div class="page-meta"><span class="status-chip ${tone(w.statusTone)}">${w.status}</span><span class="meta-chip">${w.class}</span><span class="meta-chip">${w.progress}% development pulse</span></div><div class="action-row"><a class="action-link" href="${root}attachments/compatibility.html">Check compatibility</a><a class="action-link primary" href="${root}downloads/index.html">Release channel</a></div></div></div>
+      const previewAction = w.previewPath ? `<a class="action-link" href="${root}${w.previewPath}">Full preview</a>` : "";
+      mount.innerHTML = `<div class="weapon-hero"><figure><a class="weapon-preview-link" href="${root}${w.previewPath || w.image}"><img src="${root}${w.image}" alt="${w.imageAlt}"></a></figure><div class="weapon-copy"><p class="eyebrow">${w.record}</p><h2>${w.name}</h2><p>${w.overview}</p><div class="page-meta"><span class="status-chip ${tone(w.statusTone)}">${w.status}</span><span class="meta-chip">${w.class}</span><span class="meta-chip">${w.progress}% development pulse</span></div><div class="action-row">${previewAction}<a class="action-link" href="${root}attachments/compatibility.html">Check compatibility</a><a class="action-link primary" href="${root}downloads/index.html">Release channel</a></div></div></div>
       <div class="detail-grid"><section class="detail-panel"><p class="eyebrow">specifications</p><h3>Platform Record</h3><dl>${specs}</dl></section><section class="detail-panel"><p class="eyebrow">features</p><h3>Framework Integration</h3><ul>${list(w.features)}</ul></section><section class="detail-panel"><p class="eyebrow">supported attachments</p><h3>Interface Classes</h3><ul>${list(w.attachmentSupport)}</ul></section><section class="detail-panel"><p class="eyebrow">current restrictions</p><h3>Known Issues</h3><ul>${list(w.knownIssues)}</ul></section></div>`;
     } catch (e) { fail(mount,e); }
   }
