@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "items": [
     {
       "slug": "xcr-l",
@@ -13,9 +13,10 @@
       "progress": 100,
       "featured": true,
       "path": "armory/xcr-l.html",
-      "image": "assets/media/veyrframes/xcr-l.jpg",
-      "imageAlt": "XCR-L rifle shown in the Cyberpunk 2077 inventory preview",
-      "captureLabel": "Flagship platform capture",
+      "previewPath": "armory/xcr-l-preview.html",
+      "image": "assets/media/veyrframes/xcr-l-wireframe.png",
+      "imageAlt": "Transparent wireframe viewport render of the VEYR XCR-L modular rifle",
+      "captureLabel": "XCR-L development wireframe",
       "overview": "The XCR-L is the flagship VEYRFRAME platform: a grounded modular rifle built around reusable attachment interfaces, calibrated aiming states, and a weapon-agnostic framework rather than a single sealed implementation.",
       "specifications": [
         {
@@ -116,8 +117,8 @@
       ]
     },
     {
-      "slug": "kimber",
-      "name": "Kimber",
+      "slug": "1911",
+      "name": "1911",
       "record": "VEYRFRAME-03",
       "status": "Early development",
       "statusTone": "development",
@@ -126,11 +127,12 @@
       "release": "Not staged",
       "progress": 40,
       "featured": false,
-      "path": "armory/kimber.html",
-      "image": "assets/media/veyrframes/colt-1911.jpg",
-      "imageAlt": "Kimber 1911-pattern sidearm shown in the Cyberpunk 2077 inventory preview",
-      "captureLabel": "Sidearm platform capture",
-      "overview": "The Kimber is VEYR's dedicated sidearm project. The public record covers the intended platform role and modular direction while implementation details remain limited until the base weapon is stable.",
+      "path": "armory/1911.html",
+      "previewPath": "armory/1911-preview.html",
+      "image": "assets/media/veyrframes/1911-defender-wireframe.png",
+      "imageAlt": "Centered transparent wireframe render of the compact 1911 Defender variant",
+      "captureLabel": "Defender compact variant // temporary main capture",
+      "overview": "The 1911 is VEYR's dedicated sidearm project. The compact Defender variant currently fronts the public record while the regular 1911 capture is prepared, with the wider platform remaining focused on grounded handling and modular sidearm support.",
       "specifications": [
         {
           "label": "Framework",

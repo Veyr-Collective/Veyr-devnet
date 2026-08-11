@@ -35,7 +35,7 @@ function runCommand(command) {
   if (!q) return "No command entered. Awaiting operator input.";
   if (q === "help" || q.includes("commands")) return "AVAILABLE: status | armory | attachments | projects | downloads | intel | operators | integrity | clearance";
   if (q.includes("status")) return "NODE ONLINE\nWEAPONS 03\nATTACHMENTS 12\nPROJECTS 05\nOPERATORS 00\nSYSTEM INTEGRITY 100%";
-  if (q.includes("armory") || q.includes("weapon")) return "VEYR ARMORY ONLINE: XCR-L, M4, and KIMBER records available.";
+  if (q.includes("armory") || q.includes("weapon")) return "VEYR ARMORY ONLINE: XCR-L, M4, and 1911 records available.";
   if (q.includes("attachment") || q.includes("suppressor") || q.includes("optic")) return "VEYR ATTACHMENT INDEX ONLINE: 12 public records. Compatibility filters available.";
   if (q.includes("project")) return "PROJECT BOARD ONLINE: 3 active, 1 experimental, 1 planned.";
   if (q.includes("download") || q.includes("release")) return "No public packages staged. Release channels remain locked pending validation.";

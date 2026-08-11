@@ -3,7 +3,7 @@
   "platforms": [
     "xcr-l",
     "m4",
-    "kimber"
+    "1911"
   ],
   "items": [
     {
@@ -18,7 +18,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Fast target acquisition",
@@ -41,7 +41,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Clear close-range sight picture",
@@ -64,7 +64,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Extended target identification",
@@ -88,7 +88,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Noise reduction",
@@ -112,7 +112,7 @@
       "compatibility": {
         "xcr-l": "planned",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Reduced muzzle flash",
@@ -136,7 +136,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Recoil reduction",
@@ -159,7 +159,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Flash mitigation",
@@ -182,7 +182,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Visible aiming reference",
@@ -205,7 +205,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Target illumination",
@@ -228,7 +228,7 @@
       "compatibility": {
         "xcr-l": "incompatible",
         "m4": "incompatible",
-        "kimber": "planned"
+        "1911": "planned"
       },
       "effects": [
         "Compact illumination",
@@ -251,7 +251,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Recoil control",
@@ -274,7 +274,7 @@
       "compatibility": {
         "xcr-l": "verified",
         "m4": "planned",
-        "kimber": "incompatible"
+        "1911": "incompatible"
       },
       "effects": [
         "Compact profile",
