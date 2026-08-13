@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://api.github.com; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <title>VEYR // Content Console</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body data-root="../">
+  <header class="admin-header">
+    <div>
+      <p class="eyebrow">VEYR COLLECTIVE // restricted console</p>
+      <h1>Content Editor</h1>
+      <p class="admin-lede">Edit public site records without touching source code.</p>
+    </div>
+    <div class="connection-state" id="connection-state"><span></span>DISCONNECTED</div>
+  </header>
+
+  <main class="admin-shell">
+    <section class="login-panel" id="login-panel">
+      <div>
+        <p class="eyebrow">authentication</p>
+        <h2>Connect to GitHub</h2>
+        <p>Sign in through GitHub to load and publish the public records in <code>Veyr-Collective/Veyr-devnet</code>. Your authorization remains only in this browser tab and disappears when the tab closes.</p>
+      </div>
+      <div class="github-login">
+        <button class="admin-button primary" id="github-login" type="button">Continue with GitHub</button>
+        <p class="field-help">Only GitHub accounts with write access to the VEYR repository are admitted.</p>
+      </div>
+      <p class="form-message" id="login-message" role="status"></p>
+    </section>
+
+    <section class="editor" id="editor" hidden>
+      <nav class="editor-tabs" aria-label="Content types">
+        <button data-collection="weapons" class="active">Weapons</button>
+        <button data-collection="attachments">Attachments</button>
+        <button data-collection="projects">Projects</button>
+        <button data-collection="intel">Intel</button>
+      </nav>
+
+      <div class="editor-toolbar">
+        <div>
+          <p class="eyebrow" id="collection-label">public records</p>
+          <h2 id="collection-title">Weapons</h2>
+        </div>
+        <div class="toolbar-actions">
+          <button class="admin-button" id="reload-button" type="button">Discard &amp; reload</button>
+          <button class="admin-button" id="add-button" type="button">+ Add record</button>
+          <button class="admin-button primary" id="publish-button" type="button">Publish to site</button>
+        </div>
+      </div>
+
+      <div class="record-layout">
+        <aside class="record-list" id="record-list"></aside>
+        <form class="record-form" id="record-form"></form>
+      </div>
+      <p class="form-message" id="editor-message" role="status"></p>
+    </section>
+  </main>
+
+  <dialog id="confirm-dialog">
+    <form method="dialog">
+      <p class="eyebrow">confirm publication</p>
+      <h2>Publish these changes?</h2>
+      <p>This creates a commit on the live site branch. GitHub Pages will update shortly afterward.</p>
+      <label>Commit note<input id="commit-note" value="Update site content"></label>
+      <div class="dialog-actions">
+        <button class="admin-button" value="cancel">Cancel</button>
+        <button class="admin-button primary" id="confirm-publish" value="confirm">Publish</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="admin.js"></script>
+</body>
+</html>
