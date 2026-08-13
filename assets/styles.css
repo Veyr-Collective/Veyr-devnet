@@ -163,6 +163,8 @@ p { color: var(--soft); line-height: 1.58; }
 .record-media img { transition:transform 180ms ease, filter 180ms ease; }
 .record-media a:hover img, .record-media a:focus-visible img { transform:scale(1.02); filter:grayscale(.25); }
 .record-media figcaption { margin-top:6px; color:var(--muted); font-size:.62rem; text-transform:uppercase; }
+.weapon-variants { margin-top:24px; }
+.weapon-variant-grid .record-media img { object-fit:contain; background:var(--black); }
 .card-footer { display:flex; gap:10px; align-items:center; justify-content:space-between; margin-top:auto; padding-top:16px; }
 .card-link { color:var(--amber); font-size:.72rem; text-transform:uppercase; }
 .card-link:hover, .card-link:focus-visible { color:var(--text); outline:none; }
