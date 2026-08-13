@@ -129,9 +129,9 @@
       "featured": false,
       "path": "armory/1911.html",
       "previewPath": "armory/1911-preview.html",
-      "image": "assets/media/veyrframes/1911-classic-card.png",
-      "imageAlt": "Transparent x-ray wireframe render of the VEYR 1911 Classic variant",
-      "captureLabel": "1911 Classic variant // primary platform capture",
+      "image": "assets/media/veyrframes/1911-classic-card-three-quarter.png",
+      "imageAlt": "Three-quarter transparent x-ray wireframe render of the VEYR 1911 Classic variant",
+      "captureLabel": "1911 Classic variant // three-quarter platform capture",
       "overview": "The 1911 is VEYR's dedicated sidearm project. The Classic configuration now fronts the public platform record, with Compact and Kimber variants tracked alongside it as part of the same grounded modular sidearm branch.",
       "variants": [
         {
@@ -142,10 +142,10 @@
           "statusTone": "active",
           "class": "Full-size 1911 configuration",
           "currentPhase": "Internal development",
-          "image": "assets/media/veyrframes/1911-classic-card.png",
+          "image": "assets/media/veyrframes/1911-classic-card-three-quarter.png",
           "previewImage": "assets/media/veyrframes/1911-classic-wireframe.png",
-          "imageAlt": "Transparent x-ray wireframe render of the VEYR 1911 Classic variant",
-          "captureLabel": "Classic // transparent x-ray capture"
+          "imageAlt": "Three-quarter transparent x-ray wireframe render of the VEYR 1911 Classic variant",
+          "captureLabel": "Classic // three-quarter x-ray capture"
         },
         {
           "slug": "1911-compact",
@@ -155,10 +155,10 @@
           "statusTone": "active",
           "class": "Compact 1911 configuration",
           "currentPhase": "Internal development",
-          "image": "assets/media/veyrframes/1911-compact-card-centered.png",
+          "image": "assets/media/veyrframes/1911-compact-card-three-quarter-centered.png",
           "previewImage": "assets/media/veyrframes/1911-compact-wireframe-centered.png",
-          "imageAlt": "Centered transparent x-ray wireframe render of the VEYR 1911 Compact variant",
-          "captureLabel": "Compact // recentered transparent x-ray capture"
+          "imageAlt": "Centered three-quarter transparent x-ray wireframe render of the VEYR 1911 Compact variant",
+          "captureLabel": "Compact // centered three-quarter x-ray capture"
         },
         {
           "slug": "1911-kimber",
@@ -168,10 +168,10 @@
           "statusTone": "active",
           "class": "Kimber 1911 configuration",
           "currentPhase": "Internal development",
-          "image": "assets/media/veyrframes/1911-kimber-card.png",
+          "image": "assets/media/veyrframes/1911-kimber-card-three-quarter.png",
           "previewImage": "assets/media/veyrframes/1911-kimber-wireframe.png",
-          "imageAlt": "Transparent x-ray wireframe render of the VEYR 1911 Kimber variant",
-          "captureLabel": "Kimber // transparent x-ray capture"
+          "imageAlt": "Three-quarter transparent x-ray wireframe render of the VEYR 1911 Kimber variant",
+          "captureLabel": "Kimber // three-quarter x-ray capture"
         }
       ],
       "specifications": [
