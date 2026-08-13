@@ -14,6 +14,12 @@
     <dl><div><dt>Status</dt><dd>${w.status}</dd></div><div><dt>Class</dt><dd>${w.class}</dd></div><div><dt>Current phase</dt><dd>${w.currentPhase}</dd></div></dl>
     <div class="card-footer"><span class="status-chip ${tone(w.statusTone)}">${w.statusTone}</span><a class="card-link" href="${root}${w.path}">Open record →</a></div></article>`;
 
+  const variantCard = (v) => `<article class="record-card variant-card">
+    <div class="record-header"><span>${v.record}</span><strong>${v.name}</strong></div>
+    <figure class="record-media"><a href="${root}${v.previewImage || v.image}"><img src="${root}${v.image}" alt="${v.imageAlt}" loading="lazy" decoding="async"></a><figcaption>${v.captureLabel}</figcaption></figure>
+    <dl><div><dt>Status</dt><dd>${v.status}</dd></div><div><dt>Class</dt><dd>${v.class}</dd></div><div><dt>Current phase</dt><dd>${v.currentPhase}</dd></div></dl>
+    <div class="card-footer"><span class="status-chip ${tone(v.statusTone)}">${v.statusTone}</span><a class="card-link" href="${root}${v.previewImage || v.image}">Open capture →</a></div></article>`;
+
   async function renderWeapons() {
     const mounts = [...document.querySelectorAll("[data-weapon-grid]")]; if (!mounts.length) return;
     try { const data = await load("weapons"); mounts.forEach((m) => m.innerHTML = data.items.map(weaponCard).join("")); }
@@ -31,8 +37,9 @@
       const specs = w.specifications.map((x)=>`<div><dt>${x.label}</dt><dd>${x.value}</dd></div>`).join("");
       const list = (items) => items.map((x)=>`<li>${x}</li>`).join("");
       const previewAction = w.previewPath ? `<a class="action-link" href="${root}${w.previewPath}">Full preview</a>` : "";
+      const variants = Array.isArray(w.variants) && w.variants.length ? `<div class="weapon-variants"><div class="section-heading"><div><p class="eyebrow">/platform_variants</p><h2>1911 Configurations</h2></div><p>Classic, Compact, and Kimber captures share the same VEYRFRAME sidearm record.</p></div><div class="record-grid weapon-variant-grid">${w.variants.map(variantCard).join("")}</div></div>` : "";
       mount.innerHTML = `<div class="weapon-hero"><figure><a class="weapon-preview-link" href="${root}${w.previewPath || w.image}"><img src="${root}${w.image}" alt="${w.imageAlt}"></a></figure><div class="weapon-copy"><p class="eyebrow">${w.record}</p><h2>${w.name}</h2><p>${w.overview}</p><div class="page-meta"><span class="status-chip ${tone(w.statusTone)}">${w.status}</span><span class="meta-chip">${w.class}</span><span class="meta-chip">${w.progress}% development pulse</span></div><div class="action-row">${previewAction}<a class="action-link" href="${root}attachments/compatibility.html">Check compatibility</a><a class="action-link primary" href="${root}downloads/index.html">Release channel</a></div></div></div>
-      <div class="detail-grid"><section class="detail-panel"><p class="eyebrow">specifications</p><h3>Platform Record</h3><dl>${specs}</dl></section><section class="detail-panel"><p class="eyebrow">features</p><h3>Framework Integration</h3><ul>${list(w.features)}</ul></section><section class="detail-panel"><p class="eyebrow">supported attachments</p><h3>Interface Classes</h3><ul>${list(w.attachmentSupport)}</ul></section><section class="detail-panel"><p class="eyebrow">current restrictions</p><h3>Known Issues</h3><ul>${list(w.knownIssues)}</ul></section></div>`;
+      ${variants}<div class="detail-grid"><section class="detail-panel"><p class="eyebrow">specifications</p><h3>Platform Record</h3><dl>${specs}</dl></section><section class="detail-panel"><p class="eyebrow">features</p><h3>Framework Integration</h3><ul>${list(w.features)}</ul></section><section class="detail-panel"><p class="eyebrow">supported attachments</p><h3>Interface Classes</h3><ul>${list(w.attachmentSupport)}</ul></section><section class="detail-panel"><p class="eyebrow">current restrictions</p><h3>Known Issues</h3><ul>${list(w.knownIssues)}</ul></section></div>`;
     } catch (e) { fail(mount,e); }
   }
 
