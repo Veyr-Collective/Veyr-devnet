@@ -4,6 +4,13 @@
   const BRANCH = "main";
   const API = `https://api.github.com/repos/${REPO}`;
   const AUTH_URL = "https://veyr-auth.tempus-armory.workers.dev";
+  const AUTH_RETURN_KEY = "veyrAuthReturnPath";
+  const requestedReturn = new URLSearchParams(location.search);
+  if (requestedReturn.get("return") === "isabella") {
+    sessionStorage.setItem(AUTH_RETURN_KEY,"/isabella/");
+  } else if (requestedReturn.has("return")) {
+    sessionStorage.removeItem(AUTH_RETURN_KEY);
+  }
   const state = { token:"", collection:"weapons", selected:0, documents:{}, shas:{}, dirty:new Set() };
 
   const schemas = {
@@ -43,6 +50,11 @@
     const repo=await github("");
     if (!repo.permissions?.push) throw new Error("This token does not have write access to the repository.");
     sessionStorage.setItem("veyrGithubToken",state.token);
+    if (sessionStorage.getItem(AUTH_RETURN_KEY) === "/isabella/") {
+      sessionStorage.removeItem(AUTH_RETURN_KEY);
+      location.replace("/isabella/");
+      return;
+    }
     $("#login-panel").hidden=true; $("#editor").hidden=false;
     $("#connection-state").classList.add("online"); $("#connection-state").innerHTML="<span></span>CONNECTED";
     await loadAll();
