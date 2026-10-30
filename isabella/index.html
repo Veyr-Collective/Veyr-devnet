@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#151616">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="referrer" content="no-referrer">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'; form-action 'self' https://*.trycloudflare.com; frame-src 'none'">
     <meta name="description" content="The entry point for Isabella companion access.">
     <title>Isabella // Private companion access</title>
@@ -232,7 +232,7 @@
         openButton.addEventListener('click', () => {
           const token = savedGithubToken();
           if (!token) {
-            window.location.assign('../admin/?return=isabella');
+            window.location.assign('../admin/?return=isabella&signin=2');
             return;
           }
           const verifiedDestination = validateDestination(destination);

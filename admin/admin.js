@@ -52,7 +52,7 @@
     sessionStorage.setItem("veyrGithubToken",state.token);
     if (sessionStorage.getItem(AUTH_RETURN_KEY) === "/isabella/") {
       sessionStorage.removeItem(AUTH_RETURN_KEY);
-      location.replace("/isabella/");
+      location.replace("/isabella/?signin=2");
       return;
     }
     $("#login-panel").hidden=true; $("#editor").hidden=false;
